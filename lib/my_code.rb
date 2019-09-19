@@ -16,6 +16,12 @@ def map_to_double(arr)
     end
 end
 
+def map_to_square(arr)
+    arr.map do |num|
+        num ** 2
+    end
+end
+
 def reduce_to_total(arr, starting_point)
     arr.reduce(starting_point) do |acc, cur_val|
         acc + cur_val
