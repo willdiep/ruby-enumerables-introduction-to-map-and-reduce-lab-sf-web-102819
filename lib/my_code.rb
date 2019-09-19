@@ -17,12 +17,10 @@ def map_to_double(arr)
 end
 
 def reduce_to_all_true(arr)
-    i = 0
-    while i < arr.length do
-        if !arr[i]
+    arr.each do |val|
+        if !val
             return false
         end
-        i = i + 1
     end
     return true
 end
