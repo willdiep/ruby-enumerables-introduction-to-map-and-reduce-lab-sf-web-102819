@@ -42,3 +42,13 @@ def reduce_to_all_true(arr)
     end
     return true
 end
+
+
+def reduce_to_any_true(arr)
+    arr.each do |val|
+        if !val
+            return false
+        end
+    end
+    return true
+end
