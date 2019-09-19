@@ -22,6 +22,12 @@ def map_to_square(arr)
     end
 end
 
+def reduce_to_total(arr)
+    arr.reduce(0) do |sum, num|
+        sum + num
+    end
+end
+
 def reduce_to_total(arr, starting_point)
     arr.reduce(starting_point) do |acc, cur_val|
         acc + cur_val
